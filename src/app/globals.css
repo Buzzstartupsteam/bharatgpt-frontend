@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hoverEffect {
+        @apply cursor-pointer hover:bg-[#2E274A] rounded-full xl:w-auto h-[52px] xl:h-auto xl:p-3
+    }
+}
+
+/* *{
+    @apply transition-colors duration-200
+} */
+
+.sidebar {
+    position: fixed;
+    z-index: 1;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #101828;
+    border-radius: 8px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: #718096;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-div {
+        width: 100%;
+    }
+
+    .main-div-open {
+        position: fixed;
+        left: 42%;
+
+    }
+
+    .main-div-navbar-open {
+        width: 80%;
+        position: fixed;
+        left: 42%;
+    }
+
+    .custom-ipad-width {
+        width: 60%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+
+    .main-div {
+        width: 100%;
+    }
+
+    .main-mobile-div-open {
+        position: fixed;
+        left: 67%;
+
+    }
+
+    .main-mobile-div-navbar-open {
+        position: fixed;
+        left: 70%;
+    }
+
+    .w-mobile-70{
+        width: 70%;
+    }
+
+    .margin-mobile-left{
+        margin-left: 4px;
+    }
+}
